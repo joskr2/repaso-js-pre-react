@@ -24,18 +24,17 @@
     <div class="row align-items-center g-lg-5 py-5">
       <div class="col-lg-7 text-center text-lg-start">
         <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Busqueda de pokemones</h1>
-        <h2 class="display-6 fw-italic lh-1 text-body-emphasis my-2">Busqueda de pokemones</h2>
+        <h2 id="tituloPokemon" class="display-6 fw-italic lh-1 text-body-emphasis my-2"></h2>
         <div class="container">
           <div class="row">
             <div class="col">
               <img class="img-thumbnail" id="imagenPokemon" src="
-              https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png
               "  alt="imagen pokemon">
             </div>
             <div class="col d-flex flex-column justify-content-center">
-              <h3 id="nombrePokemon">Nombre</h3>
-              <h3 id="idPokemon">id</h3>
-              <h3 id="tipoPokemon">Tipo</h3>
+              <h3 id="nombrePokemon"></h3>
+              <h3 id="idPokemon"></h3>
+              <h3 id="tipoPokemon"></h3>
             </div>
           </div>
         </div>
@@ -47,7 +46,7 @@
             <label for="inputNombre">Pokemon</label>
           </div>
           <div class="form-floating mb-3">
-            <input type="password" class="form-control" id="inputId" placeholder="Busqueda por id">
+            <input type="text" class="form-control" id="inputId" placeholder="Busqueda por id">
             <label for="inputId">Id</label>
           </div>
           <div class="checkbox mb-3">
